@@ -1,10 +1,7 @@
 Water was sampled according to a standardized protocol (https://unesdoc.unesco.org/ark:/48223/pf0000384014).
 
-Environmental DNA samples were amplified targeting the cytochrome c oxidase subunit I (COI) gene using the primer pair mlCOIintF (forward: 5′-GGWACWGGWTGAACWGTWTAYCCYCC-3′) and dgHCO2198 (reverse: 5′-TANACYTCNGGRTGNCCRAARAAYCA-3′) (Leray et al., 2013; doi:10.1186/1742-9994-10-34). Libraries were prepared in a paired-end layout and sequenced on an Illumina NovaSeq 6000 platform.
+Environmental DNA samples were amplified targeting the cytochrome c oxidase subunit I (COI) gene using the primer pair mlCOIintF (forward: 5′-GGWACWGGWTGAACWGTWTAYCCYCC-3′) and dgHCO2198 (reverse: 5′-TANACYTCNGGRTGNCCRAARAAYCA-3′) (Leray et al., 2013; doi:10.1186/1742-9994-10-34). Libraries were prepared in a paired-end layout and sequenced on an Illumina NovaSeq 6000 platform. For full details, see protocol: https://www.unesco.org/sites/default/files/medias/fichiers/2024/12/eDNA_expeditions_protocols_EN.pdf?hub=66910
 
 Raw sequence reads have been deposited in the European Nucleotide Archive (ENA) under BioProject PRJEB99999 (https://www.ebi.ac.uk/ena/browser/view/PRJEB99999).
 
 Sequences were processed on the PacMAN bioinformatic pipeline (https://github.com/iobis/PacMAN-pipeline).
-
-
-Note: We have not included extraction methods, PCR conditions (cycling parameters, polymerase, replicates), library preparation kit, indexing strategy, or read length. These would normally appear in a complete methods section and should be included in a well-documented eDNA dataset. They were excluded here to make the lesson materials simpler.
