@@ -1,0 +1,21 @@
+## WoRMS Taxon Matching
+
+::: {.columns}
+
+::: {.column width="45%"}
+Options for taxon matching:
+
+* [WoRMS Taxon Match Tool](https://www.marinespecies.org/aphia.php?p=match)
+* Programmatically:
+    * [obistools](https://iobis.github.io/obistools/#taxon-matching)::match_taxa
+    * [worrms](https://docs.ropensci.org/worrms/reference/wm_records_taxamatch.html)::wm_records_taxamatch
+    * [pyworms](https://github.com/iobis/pyworms)
+
+:::
+
+::: {.column width="55%"}
+
+![](/assets/worms-dropdown.png)
+::: 
+
+::::
