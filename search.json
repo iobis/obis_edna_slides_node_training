@@ -63,6 +63,13 @@
     "text": "Key fields to include: Occurrence core\n\n\nOccurrence core table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — WoRMS\nbasisOfRecord = “MaterialSample”\n\neventDate, decimalLatitude, decimalLongitude\n\noccurrenceStatus = “present”\n\n\nOccurrence core table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\nassociatedSequences (link to e.g. GenBank or ENA accession)\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)"
   },
   {
+    "objectID": "index.html#worms-taxon-matching",
+    "href": "index.html#worms-taxon-matching",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "WoRMS Taxon Matching",
+    "text": "WoRMS Taxon Matching\n\n\nOptions for taxon matching:\n\nWoRMS Taxon Match Tool\nProgrammatically:\n\nobistools::match_taxa\nworrms::wm_records_taxamatch\npyworms"
+  },
+  {
     "objectID": "index.html#key-fields-to-include-dna-extension",
     "href": "index.html#key-fields-to-include-dna-extension",
     "title": "Publishing eDNA Data in OBIS",
@@ -74,7 +81,7 @@
     "href": "index.html#table-structure-options",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Table structure options",
-    "text": "Table structure options\nOption A — Occurrence Core\noccurrence.csv ←→ dna_derived.csv\n(linked via occurrenceID)\n\nOption B — Event Core (recommended for eDNA)\nevent.csv\n└── occurrence.csv (linked via eventID)\n└── dna_derived.csv (linked via occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
+    "text": "Table structure options\nOption A — Occurrence Core\noccurrence.csv \n  └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv         (linked via occurrenceID)\n\nOption B — Event Core (recommended for eDNA)\nevent.csv\n  └── occurrence.csv        (linked via eventID)\n       └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv              (linked via eventID or occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
   },
   {
     "objectID": "index.html#example-usage-of-event-core-structure",
@@ -82,6 +89,20 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "Example usage of event core structure",
     "text": "Example usage of event core structure\n\n\n\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row."
+  },
+  {
+    "objectID": "index.html#emof-extension",
+    "href": "index.html#emof-extension",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "eMoF extension",
+    "text": "eMoF extension\n\nTable to record all types of measurements (abiotic, biotic, environmental, sampling…)\nMeasurements recorded in long format\n\nmeasurementType, measurementValue, measurementUnit\n\nLinking sampling info to eventIDs decreases duplication\nUse controlled vocabulary whenever possible!\n\n\n\n\n\n\n\n\n\n\n\n\neventID\noccurrenceID\nmeasurementType\nmeasurementValue\nmeasurementUnit\nmeasurementTypeID\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\neMoF template\n\nAs some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit"
+  },
+  {
+    "objectID": "index.html#controlled-vocabulary",
+    "href": "index.html#controlled-vocabulary",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Controlled Vocabulary",
+    "text": "Controlled Vocabulary\n\n\nIdentifiers for each eMoF column\n\nmeasurementUnitID\nmeasurementValueID\n\nnon-numeric values\n\nmeasurementTypeID\n\n→ Facilitates data understanding\n→ Enables data aggregation\n→ Decreases misuse potential\n\nWhat info should vocabulary terms capture? \n\nOBIS recommends using NERC vocabulary terms\n\n\n\nEmof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!\nWhen selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g. length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary"
   },
   {
     "objectID": "index.html#publishing-workflow",
@@ -117,5 +138,12 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "Summary",
     "text": "Summary\n\n\nThree steps to publish your eDNA data:\n\nFormat — Darwin Core + DNA Derived Data Extension\nLong format: one row = one sequence per sample\nDocument — Complete EML metadata\nPrimers, methods, bioinformatics pipeline, license\nPublish — Through your OBIS node IPT\nGet a DOI. Be cited. Join the global record.\n\n\nStart here → manual.obis.org/dna_data.html\n\nWhy it matters\n\neDNA captures biodiversity no other method can.\nPublishing it in OBIS makes it\nreusable, citable, and permanent.\n\n\n\nClose with energy. Remind the audience that the gap between eDNA data currently in OBIS and what could be there is enormous — their data can meaningfully fill it. If time allows, invite them to share what kind of eDNA data they have and talk about the right category/structure for their case."
+  },
+  {
+    "objectID": "index.html#dna-data-management-platform",
+    "href": "index.html#dna-data-management-platform",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "DNA Data Management Platform",
+    "text": "DNA Data Management Platform\n🔧 OBIS is developing a data management platform for DNA data including:\n\n\n\nBioinformatics\nQC\nValidation\nPublication to OBIS pipeline\n\nTo be offered to OBIS nodes to support local eDNA projects!\n\n🚧"
   }
 ]

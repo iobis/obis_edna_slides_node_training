@@ -2,7 +2,7 @@
 
 #title-slide::after {
   white-space: pre;
-  content: "OBON workshop on eDNA data management and publishing";
+  content: "OBIS Nodes workshop on eDNA data management and publishing";
 }
 
 /* adjust date size */
@@ -55,6 +55,10 @@
   background-color: #f8f9fa;
 }
 
+/* make code block text a bit bigger */
+.reveal pre{
+  font-size: 1.4em;
+}
 
 /* Reserve room for the footer on every slide */
 .reveal .slides section {
