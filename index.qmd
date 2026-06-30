@@ -7,15 +7,9 @@ date: today
 
 {{< include slides/_00-agenda.qmd >}}
 
-{{< include slides/_01-what-is-obis.qmd >}}
-
-{{< include slides/_02-mature-global-community.qmd >}}
-
 {{< include slides/_22-edna_obis.qmd >}}
 
 {{< include slides/_26-what_is_edna_metabarcoding.qmd >}}
-
-{{< include slides/_27-what-is-edna-data.qmd >}}
 
 {{< include slides/_23-edna_workflow.qmd >}} 
 
@@ -24,6 +18,12 @@ date: today
 {{< include slides/_25-key_fields_qpcr.qmd >}}
 
 {{< include slides/_03-why-publish-edna.qmd >}}
+
+{{< include slides/_27-what-is-edna-data.qmd >}}
+
+{{< include slides/_31-edna-data-considerations.qmd >}}
+
+{{< include slides/_32-edna-data-landscape.qmd >}}
 
 {{< include slides/_04-data-standard.qmd >}}
 

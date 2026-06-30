@@ -9,20 +9,12 @@
 **Field Sampling**
 
 - Date, Coordinates, Environmental measurements
-
-[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
-`eventID` · `eventDate` · `decimalLatitude` · `decimalLongitude`  
-`samplingProtocol` · `materialSampleID` · `Env_broad_scale`
 :::
 
 ::: {style="color:white; padding:12px; border-radius:8px;"}
 **Biomarker / PCR**
 
-- Primers, Target gene, PCR conditions
-
-[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
-`target_gene` · `target_subfragment` · `pcr_cond`  
-`pcr_primer_forward/reverse` · `pcr_primer_name` · `pcr_primer_reference`
+- Primer sequence, primer reference, target gene, PCR conditions, length of product, concentration, 
 :::
 :::
 
@@ -31,20 +23,13 @@
 **DNA Extraction**
 
 - Concentration, Extraction method, Extracted amount
-
-[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
-`samplingProtocol` · `Concentration` · `concentrationUnit`  
-`ratioOfAbsorbance260_230` · `ratioOfAbsorbance260_280`
 :::
 
 ::: {style="color:white; padding:12px; border-radius:8px;"}
 **Sequences & Taxonomy**
 
-- Sequencing platform, Pipeline, Reference library
-
-[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
-`seq_meth` · `lib_layout` · `associatedSequences`  
-`DNA_sequence` · `otu_seq_comp_appr` · `scientificName` · `taxonID` · `otu_db`
+- Sequencing platform, Library layout, Public repositry ID (NCBI, ENA)
+- Taxonomy, annotation confidence and reference, Pipeline, Reference library
 :::
 :::
 
