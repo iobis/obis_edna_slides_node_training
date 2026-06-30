@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "index.html#what-is-obis",
-    "href": "index.html#what-is-obis",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "What is OBIS?",
-    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n&gt; 199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
-  },
-  {
-    "objectID": "index.html#a-mature-global-community",
-    "href": "index.html#a-mature-global-community",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "A Mature Global Community",
-    "text": "A Mature Global Community\n\n\n\n\n\n\n\nOBIS is the world’s largest open-access repositoryfor marine biodiversity data.\n \n\n36 nodes  across 99 countries  representing 1,000+ institutions  and 6,000+ scientists.\n\n\n\n\nOBIS sits within UNESCO’s IOC (IODE, est. 1961), working alongside ODIS for interoperability and OTGA for training. Strong partnerships include GBIF, TDWG, EMODnet, GOOS, and DataONE.\nCurrent stats: 136M species observations, 12M records from ABNJ, 28M DNA sequences (Jan 2026).\nThis data supports multiple agreements: Paris Agreement, 30x30, GBF (Targets 3, 6, 8, 20, 21), SDG14, and now BBNJ.\nRecognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System.\nOBIS is listed in KMGBF Targets 20 and 21.\nOBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA."
-  },
-  {
     "objectID": "index.html#edna-data-in-obis",
     "href": "index.html#edna-data-in-obis",
     "title": "Publishing eDNA Data in OBIS",
     "section": "eDNA data in OBIS",
-    "text": "eDNA data in OBIS\n\n\n\n\n\n\nOBIS currently holds 128 datasets with eDNA-derived occurrences, including 44,5 million records\nThat is 1.8% of all datasets, but 22% of all occurrence records in OBIS\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
+    "text": "eDNA data in OBIS\n\n\n\n\n\n\nOBIS currently holds 128 datasets with eDNA-derived occurrences, including 44,5 million records\nAbout 2 million distinct sequences\nThat is 2% of all datasets, but 25% of all occurrence records in OBIS\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
   },
   {
     "objectID": "index.html#what-is-environmental-dna-metabarcoding",
@@ -26,13 +12,6 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is Environmental DNA Metabarcoding?",
     "text": "What is Environmental DNA Metabarcoding?\n\n\nEnvironmental DNA (eDNA)\n\n“Any DNA collected from an environmental sample without first isolating targeted organisms”\n— Taberlet 2012\n\n\nEnvironments: water, soil, sediment, air\nFree DNA, particle-bound DNA, organelles, cells, tissue\nFrom viruses to fish, crustaceans, and plants\n\n\n\n\n\nBarcoding + Meta\n\n\nBarcoding = species ID via a genetic marker sequence\nMeta = all together (all organisms at once)\n\n\n\n\n\n\nChoosing the right barcode\n\n\n\nDefines which organisms can be identified\nTrade-off: broad groups vs species-level precision\nCommon markers: 12S, 16S, 18S, COI, ITS\n\n\n\n\n\n\nEnvironmental DNA is any DNA collected from an environmental sample without first isolating target organisms (Taberlet 2012). Metabarcoding combines ‘meta’ — all together — with barcoding, which is species identification using a short genetic marker. The choice of marker determines which organisms are detected, and there is always a trade-off between taxonomic breadth and species-level resolution."
-  },
-  {
-    "objectID": "index.html#what-is-special-about-edna-data",
-    "href": "index.html#what-is-special-about-edna-data",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "What is special about eDNA data?",
-    "text": "What is special about eDNA data?\n\n\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI\n\n\n…but NCBI alone is not enough\n\nRaw sequences cannot be searched by species in time and space\nNo link to spatial coordinates or sampling date\nCannot support distribution maps, trend analyses, or MPA assessments\n\n\n\nSpecial considerations\n⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing\n📚 Relies on reference databases — results depend on database completeness\n❓ Large fraction of unknown sequences — no match in any database\n📋 The DwC DNA Extension records how work was done, enabling future re-analysis\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
     "objectID": "index.html#the-edna-metabarcoding-workflow",
@@ -46,14 +25,14 @@
     "href": "index.html#key-metadata-edna-metabarcoding",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key Metadata: eDNA Metabarcoding",
-    "text": "Key Metadata: eDNA Metabarcoding\nFrom field collection to taxonomy — what to capture at each step\n\n\n\nField Sampling\n\nDate, Coordinates, Environmental measurements\n\nDwC terms:\neventID · eventDate · decimalLatitude · decimalLongitude\nsamplingProtocol · materialSampleID · Env_broad_scale\n\n\nBiomarker / PCR\n\nPrimers, Target gene, PCR conditions\n\nDwC terms:\ntarget_gene · target_subfragment · pcr_cond\npcr_primer_forward/reverse · pcr_primer_name · pcr_primer_reference\n\n\n\nDNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\nDwC terms:\nsamplingProtocol · Concentration · concentrationUnit\nratioOfAbsorbance260_230 · ratioOfAbsorbance260_280\n\n\nSequences & Taxonomy\n\nSequencing platform, Pipeline, Reference library\n\nDwC terms:\nseq_meth · lib_layout · associatedSequences\nDNA_sequence · otu_seq_comp_appr · scientificName · taxonID · otu_db\n\n\n\nAt field sampling: map to eventID, decimalLatitude/Longitude, samplingProtocol, Env_broad_scale. At DNA extraction: Concentration and ratioOfAbsorbance fields. At PCR stage: target_gene, pcr_primer_forward/reverse, pcr_cond. At sequences/taxonomy: seq_meth, DNA_sequence, scientificName, taxonID, otu_db."
+    "text": "Key Metadata: eDNA Metabarcoding\nFrom field collection to taxonomy — what to capture at each step\n\n\n\nField Sampling\n\nDate, Coordinates, Environmental measurements\n\n\n\nBiomarker / PCR\n\nPrimer sequence, primer reference, target gene, PCR conditions, length of product, concentration,\n\n\n\n\nDNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\n\n\nSequences & Taxonomy\n\nSequencing platform, Library layout, Public repositry ID (NCBI, ENA)\nTaxonomy, annotation confidence and reference, Pipeline, Reference library\n\n\n\n\nAt field sampling: map to eventID, decimalLatitude/Longitude, samplingProtocol, Env_broad_scale. At DNA extraction: Concentration and ratioOfAbsorbance fields. At PCR stage: target_gene, pcr_primer_forward/reverse, pcr_cond. At sequences/taxonomy: seq_meth, DNA_sequence, scientificName, taxonID, otu_db."
   },
   {
     "objectID": "index.html#key-metadata-quantitative-pcr-qpcr",
     "href": "index.html#key-metadata-quantitative-pcr-qpcr",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key Metadata: Quantitative PCR (qPCR)",
-    "text": "Key Metadata: Quantitative PCR (qPCR)\nTargeted species detection — additional fields vs metabarcoding · Category 3\n\n\n\nField Sampling\nDwC / DNA Ext. terms:\neventID · eventDate · decimalLatitude · decimalLongitude\nsamplingProtocol · materialSampleID\nEnv_broad_scale · Samp_size · Size_frac\n\n\nPCR Protocol\nDwC / DNA Ext. terms:\nPcr_cond · probeReporter · probeQuencher\nestimatedNumberOfCopies\namplificationReactionVolume · amplificationReactionVolumeUnit\n\n\n\nDNA Extraction\nDwC / DNA Ext. terms:\nsamplingProtocol · Concentration · concentrationUnit\nratioOfAbsorbance260_230/280\nmethodDetermConcentrationAndRatios\n\n\nTarget & Quantity\nDwC / DNA Ext. terms:\nscientificName · scientificNameID\npcr_primer_forward/reverse/reference\ntarget_gene · target_subfragment\norganismQuantityType · thresholdQuantificationCycle\nbaselineValue · Pcr_primer_lod\n\n\n\nCategory 3 — Targeted species detection · basisOfRecord = MaterialSample\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
+    "text": "Key Metadata: Quantitative PCR (qPCR)\nTargeted species detection — additional fields vs metabarcoding · Category 3\n\n\n\nField Sampling\n\nDate, Coordinates, Environmental measurements\n\n\n\nPCR Protocol - PCR conditions\n\n\n\nDNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\n\n\nTarget & Quantity - Target gene region, primers - Copy number, concentaration, LOD, Cq, baseline\n\n\n\nCategory 3 — Targeted species detection · basisOfRecord = MaterialSample\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
   },
   {
     "objectID": "index.html#why-publish-edna-data",
@@ -61,6 +40,27 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "Why publish eDNA data?",
     "text": "Why publish eDNA data?\n\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nShared eDNA data is powerful data\n\nData contributes to global analyses\nData has long-term value\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
+  },
+  {
+    "objectID": "index.html#what-is-special-about-edna-data",
+    "href": "index.html#what-is-special-about-edna-data",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is special about eDNA data?",
+    "text": "What is special about eDNA data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
+  },
+  {
+    "objectID": "index.html#what-is-special-about-edna-data-1",
+    "href": "index.html#what-is-special-about-edna-data-1",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is special about eDNA data?",
+    "text": "What is special about eDNA data?\n\nSpecial considerations\n⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing\n📚 Relies on reference databases — results depend on database completeness\n❓ Large fraction of unknown sequences — no match in any database\n📋 The DwC DNA Extension records how work was done, enabling future re-analysis\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+  },
+  {
+    "objectID": "index.html#edna-data-standards",
+    "href": "index.html#edna-data-standards",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "eDNA data standards",
+    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\nMiXS - (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\nDarwin Core (DwC)\nCommunity vocabulary for biodiversity data — species, location, date, basis of record\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\nDeveloping landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
     "objectID": "index.html#the-data-standard",
