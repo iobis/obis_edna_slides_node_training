@@ -1,0 +1,55 @@
+## Key Metadata: eDNA Metabarcoding
+
+*From field collection to taxonomy — what to capture at each step*
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+**Field Sampling**
+
+- Date, Coordinates, Environmental measurements
+
+[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
+`eventID` · `eventDate` · `decimalLatitude` · `decimalLongitude`  
+`samplingProtocol` · `materialSampleID` · `Env_broad_scale`
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+**Biomarker / PCR**
+
+- Primers, Target gene, PCR conditions
+
+[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
+`target_gene` · `target_subfragment` · `pcr_cond`  
+`pcr_primer_forward/reverse` · `pcr_primer_name` · `pcr_primer_reference`
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+**DNA Extraction**
+
+- Concentration, Extraction method, Extracted amount
+
+[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
+`samplingProtocol` · `Concentration` · `concentrationUnit`  
+`ratioOfAbsorbance260_230` · `ratioOfAbsorbance260_280`
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+**Sequences & Taxonomy**
+
+- Sequencing platform, Pipeline, Reference library
+
+[DwC terms:]{style="color:#E8A020; font-weight:bold;"}  
+`seq_meth` · `lib_layout` · `associatedSequences`  
+`DNA_sequence` · `otu_seq_comp_appr` · `scientificName` · `taxonID` · `otu_db`
+:::
+:::
+
+::::
+
+::: notes
+At field sampling: map to eventID, decimalLatitude/Longitude, samplingProtocol, Env_broad_scale. At DNA extraction: Concentration and ratioOfAbsorbance fields. At PCR stage: target_gene, pcr_primer_forward/reverse, pcr_cond. At sequences/taxonomy: seq_meth, DNA_sequence, scientificName, taxonID, otu_db.
+:::

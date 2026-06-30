@@ -11,6 +11,18 @@ date: today
 
 {{< include slides/_02-mature-global-community.qmd >}}
 
+{{< include slides/_22-edna_obis.qmd >}}
+
+{{< include slides/_26-what_is_edna_metabarcoding.qmd >}}
+
+{{< include slides/_27-what-is-edna-data.qmd >}}
+
+{{< include slides/_23-edna_workflow.qmd >}} 
+
+{{< include slides/_24-key_fields_metabarcoding.qmd >}}
+
+{{< include slides/_25-key_fields_qpcr.qmd >}}
+
 {{< include slides/_03-why-publish-edna.qmd >}}
 
 {{< include slides/_04-data-standard.qmd >}}
@@ -31,6 +43,8 @@ date: today
 
 {{< include slides/_11-table-structure-options.qmd >}}
 
+{{< include slides/_28-table-structure-examples.qmd >}}
+
 {{< include slides/_12-event-core-structure-example.qmd >}}
 
 {{< include slides/_18-emof.qmd >}}   
@@ -39,9 +53,13 @@ date: today
 
 {{< include slides/_13-publishing-workflow.qmd >}}
 
+{{< include slides/_29-supporting-tools.qmd >}}
+
 {{< include slides/_14-metabarcoding-data-toolkit.qmd >}}
 
 {{< include slides/_15-quality-control.qmd >}}
+
+{{< include slides/_30-edna-data-in-obis.qmd >}}
 
 {{< include slides/_16-resources-community.qmd >}}
 

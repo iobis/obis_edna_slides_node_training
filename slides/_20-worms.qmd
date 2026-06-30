@@ -11,11 +11,25 @@ Options for taxon matching:
     * [worrms](https://docs.ropensci.org/worrms/reference/wm_records_taxamatch.html)::wm_records_taxamatch
     * [pyworms](https://github.com/iobis/pyworms)
 
+::: {.callout-tip}
+## No WoRMS match?
+Use the highest-rank taxon that does have a match (e.g. family or order). Keep the sequence — it can be re-identified later as reference databases improve.
+:::
+
 :::
 
 ::: {.column width="55%"}
 
 ![](/assets/worms-dropdown.png)
+
+
+::: {.callout-note icon=false}
+## [Still no match?]{style="color:#02C39A"}
+Uknown sequences should be recorded as: 
+`scientificName` = “Biota incertae sedis”
+`scientificNameID` = urn:lsid:marinespecies.org:taxname:12
+:::
+
 ::: 
 
 ::::

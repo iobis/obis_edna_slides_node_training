@@ -1,0 +1,57 @@
+## Key Metadata: Quantitative PCR (qPCR)
+
+[Targeted species detection — additional fields vs metabarcoding · Category 3]{style="color:#E8A020; font-style:italic;"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+**Field Sampling**
+
+[DwC / DNA Ext. terms:]{style="color:#E8A020; font-weight:bold;"}  
+`eventID` · `eventDate` · `decimalLatitude` · `decimalLongitude`  
+`samplingProtocol` · `materialSampleID`  
+`Env_broad_scale` · `Samp_size` · `Size_frac`
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+**PCR Protocol**
+
+[DwC / DNA Ext. terms:]{style="color:#E8A020; font-weight:bold;"}  
+`Pcr_cond` · `probeReporter` · `probeQuencher`  
+`estimatedNumberOfCopies`  
+`amplificationReactionVolume` · `amplificationReactionVolumeUnit`
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+**DNA Extraction**
+
+[DwC / DNA Ext. terms:]{style="color:#E8A020; font-weight:bold;"}  
+`samplingProtocol` · `Concentration` · `concentrationUnit`  
+`ratioOfAbsorbance260_230/280`  
+`methodDetermConcentrationAndRatios`
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+**Target & Quantity**
+
+[DwC / DNA Ext. terms:]{style="color:#E8A020; font-weight:bold;"}  
+`scientificName` · `scientificNameID`  
+`pcr_primer_forward/reverse/reference`  
+`target_gene` · `target_subfragment`  
+`organismQuantityType` · `thresholdQuantificationCycle`  
+`baselineValue` · `Pcr_primer_lod`
+:::
+:::
+
+::::
+
+::: {style="font-size:0.65em; color:#5A8FA8; text-align:center; margin-top:6px;"}
+*Category 3 — Targeted species detection · `basisOfRecord = MaterialSample`*
+:::
+
+::: notes
+qPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample.
+:::
