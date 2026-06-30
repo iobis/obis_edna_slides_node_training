@@ -1,0 +1,12 @@
+original,DwC
+name,"used to create eventID, also dna table samp_name"
+size,"used in dna table samp_size"
+event_begin,verbatimEventDate and converted to ISO8601 for eventDate
+area_name,locality
+area_longitude,decimalLongitude
+area_latitude,decimalLatitude
+area_uncertainty,coordinateUncertaintyInMeters
+parent_area_name,higherGeography also added higherGeographyID
+dna,dna table concentration
+depth,minimum- and maximumDepthInMeters
+temperature,mapped to emof
