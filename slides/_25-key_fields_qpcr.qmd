@@ -6,13 +6,14 @@
 
 ::: {.column width="50%"}
 ::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
-**Field Sampling**
+⛵ **Field Sampling**
 
 - Date, Coordinates, Environmental measurements
 :::
 
 ::: {style="color:white; padding:12px; border-radius:8px;"}
-**PCR Protocol**
+🧪 **PCR Protocol**
+
 - PCR conditions
 
 :::
@@ -20,13 +21,14 @@
 
 ::: {.column width="50%"}
 ::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
-**DNA Extraction**
+🧬 **DNA Extraction**
 
 - Concentration, Extraction method, Extracted amount
 :::
 
 ::: {style="color:white; padding:12px; border-radius:8px;"}
-**Target & Quantity**
+🎯 **Target & Quantity**
+
 - Target gene region, primers
 - Copy number, concentaration, LOD, Cq, baseline
 

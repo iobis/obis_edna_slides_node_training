@@ -6,12 +6,14 @@
 * Linking sampling info to `eventID`s **decreases duplication**
 * Use controlled vocabulary whenever possible!
 
-| eventID | occurrenceID | measurementType | measurementValue | measurementUnit |measurementTypeID | measurementValueID | measurementUnitID |
+| eventID | occurrenceID | measurementType | measurementValue | measurementUnit |
 |---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
+| YEARsite1samp1 |  | temperature | 25 | C |
 
-[eMoF template](https://github.com/iobis/obis_edna_slides_node_training/blob/master/dataset/dwc_templates/emof.csv)
+| measurementTypeID | measurementUnitID |
+|---|---|---|
+| http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/ | http://vocab.nerc.ac.uk/collection/P06/current/UPAA/ |
+
 
 ::: {.notes}
 As some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit

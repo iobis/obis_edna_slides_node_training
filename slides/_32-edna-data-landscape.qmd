@@ -4,20 +4,25 @@
 ::: {style="color:white; padding:15px; border-radius:8px;"}
  **Two major eDNA data standards exist**
 
-**MiXS**
- -  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI
-
-**Darwin Core (DwC)**
-
-Community vocabulary for biodiversity data — species, location, date, basis of record
+:::: {.columns}
+::: {.column width="50%"}
+1. **MiXS** <br>
+(Minimum Information about any (x) Sequence) — for raw sequences in NCBI
 :::
 
+::: {.column width="50%"}
+2. **Darwin Core (DwC)**<br>
+Community vocabulary for biodiversity data — species, location, date, basis of record
+:::
+::::
+
+:::
 
 ::: {style="text-align:center; color:#065A82; font-weight:bold; font-style:italic; margin-top:10px;"}
 OBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time
 :::
-
-**Developing landscape**
+<br>
+🔜**Developing landscape** 
 
 - Rapidly changing field
 - For OBIS future directions include the DWC-DP and FAIReDNA terms

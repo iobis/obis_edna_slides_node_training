@@ -1,6 +1,6 @@
 ## Table structure options
 
-### Option A — Occurrence Core
+**Option A — Occurrence Core**
 
 ```
 occurrence.csv 
@@ -8,9 +8,9 @@ occurrence.csv
   └── emof.csv         (linked via occurrenceID)
 ```
 
-<br>
+<hr>
 
-### Option B — Event Core (recommended for eDNA)
+**Option B — Event Core (recommended for eDNA)**
 
 
 ```

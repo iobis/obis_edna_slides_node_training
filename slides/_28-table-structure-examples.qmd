@@ -48,9 +48,14 @@
 :::
 
 ::::
+<br>
 
 ::: {style="text-align:center; color:#5A8FA8; font-style:italic; margin-top:10px;"}
 Tables linked by `eventID` and `occurrenceID`
+:::
+
+::: {style="text-align:center; color:#5A8FA8; margin-top:10px;"}
+Optional 4th table: **eMoF** for measurements and facts
 :::
 
 ::: notes

@@ -6,13 +6,13 @@
 
 ::: {.column width="50%"}
 ::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
-**Field Sampling**
+⛵ **Field Sampling**
 
 - Date, Coordinates, Environmental measurements
 :::
 
 ::: {style="color:white; padding:12px; border-radius:8px;"}
-**Biomarker / PCR**
+🧪 **Biomarker / PCR**
 
 - Primer sequence, primer reference, target gene, PCR conditions, length of product, concentration, 
 :::
@@ -20,13 +20,13 @@
 
 ::: {.column width="50%"}
 ::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
-**DNA Extraction**
+🧬 **DNA Extraction**
 
 - Concentration, Extraction method, Extracted amount
 :::
 
 ::: {style="color:white; padding:12px; border-radius:8px;"}
-**Sequences & Taxonomy**
+💻 **Sequences & Taxonomy**
 
 - Sequencing platform, Library layout, Public repositry ID (NCBI, ENA)
 - Taxonomy, annotation confidence and reference, Pipeline, Reference library

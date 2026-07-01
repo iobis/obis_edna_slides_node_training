@@ -3,24 +3,15 @@
 :::: {.columns}
 
 ::: {.column width="45%"}
-**Environmental DNA (eDNA)**
-
-> *"Any DNA collected from an environmental sample without first isolating targeted organisms"*  
-> — Taberlet 2012
-
-- Environments: water, soil, sediment, air
-- Free DNA, particle-bound DNA, organelles, cells, tissue
-- From viruses to fish, crustaceans, and plants
-:::
-
-::: {.column width="55%"}
-
 ::: {.callout-note icon=false}
 ## [Barcoding]{style="color:#02C39A"} + [Meta]{style="color:#E8A020"}
 
 **Barcoding** = species ID via a genetic marker sequence  
 **Meta** = all together (all organisms at once)
 :::
+:::
+
+::: {.column width="55%"}
 
 ::: {.callout-tip icon=false}
 ## Choosing the right barcode
@@ -37,5 +28,6 @@
 ::: notes
 Environmental DNA is any DNA collected from an environmental sample without first isolating target organisms (Taberlet 2012). Metabarcoding combines 'meta' — all together — with barcoding, which is species identification using a short genetic marker. The choice of marker determines which organisms are detected, and there is always a trade-off between taxonomic breadth and species-level resolution.
 :::
+
 
 ---

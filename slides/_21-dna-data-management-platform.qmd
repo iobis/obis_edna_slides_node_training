@@ -1,4 +1,4 @@
-## DNA Data Management Platform
+## OBIS DNA Data Management Platform
 
 🔧 OBIS is developing a data management platform for DNA data including:
 
