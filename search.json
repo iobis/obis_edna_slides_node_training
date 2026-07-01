@@ -7,11 +7,25 @@
     "text": "eDNA data in OBIS\n\n\n\n\n\n\nOBIS currently holds 128 datasets with eDNA-derived occurrences, including 44,5 million records\nAbout 2 million distinct sequences\nThat is 2% of all datasets, but 25% of all occurrence records in OBIS\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
   },
   {
+    "objectID": "index.html#what-is-edna",
+    "href": "index.html#what-is-edna",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is eDNA?",
+    "text": "What is eDNA?\nEnvironmental DNA (eDNA)\n\n“Any DNA collected from an environmental sample without first isolating targeted organisms”\n— Taberlet 2012\n\n\n\n\nEnvironments: water, soil, sediment, air\nFree DNA, particle-bound DNA, organelles, cells, tissue\nFrom viruses to fish, crustaceans, and plants\n\n\n🌊🌱🍃\n\n\nMost common eDNA data types you may encounter:\n\n\nEnvironmental DNA Metabarcoding\n\nQuantitative PCR (PCR)\n\n\nEnvironmental DNA is any DNA collected from an environmental sample without first isolating target organisms (Taberlet 2012). The most common we’ll likely encounter as OBIS nodes is metabarcoding and qPCR. For this workshop we’ll focus more on metabarcoding"
+  },
+  {
+    "objectID": "index.html#five-data-categories",
+    "href": "index.html#five-data-categories",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Five data categories",
+    "text": "Five data categories\nWhich one fits your data?\n\n\n\n\n\n\n\n\n#\nCategory\nExample\n\n\n\n\n1\nDNA-derived occurrences\nMetabarcoding (ASVs/OTUs assigned to taxa)\n\n\n2\nEnriched occurrences\nVoucher specimen + barcoded\n\n\n3\nTargeted species detection\nqPCR / ddPCR assays\n\n\n4\nName references\nSequence in GenBank only\n\n\n5\nMetadata only\nDataset without sequences\n\n\n\n🔎 Use the GBIF decision tree to confirm your category\n\nWe won’t go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop."
+  },
+  {
     "objectID": "index.html#what-is-environmental-dna-metabarcoding",
     "href": "index.html#what-is-environmental-dna-metabarcoding",
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is Environmental DNA Metabarcoding?",
-    "text": "What is Environmental DNA Metabarcoding?\n\n\nEnvironmental DNA (eDNA)\n\n“Any DNA collected from an environmental sample without first isolating targeted organisms”\n— Taberlet 2012\n\n\nEnvironments: water, soil, sediment, air\nFree DNA, particle-bound DNA, organelles, cells, tissue\nFrom viruses to fish, crustaceans, and plants\n\n\n\n\n\nBarcoding + Meta\n\n\nBarcoding = species ID via a genetic marker sequence\nMeta = all together (all organisms at once)\n\n\n\n\n\n\nChoosing the right barcode\n\n\n\nDefines which organisms can be identified\nTrade-off: broad groups vs species-level precision\nCommon markers: 12S, 16S, 18S, COI, ITS\n\n\n\n\n\n\nEnvironmental DNA is any DNA collected from an environmental sample without first isolating target organisms (Taberlet 2012). Metabarcoding combines ‘meta’ — all together — with barcoding, which is species identification using a short genetic marker. The choice of marker determines which organisms are detected, and there is always a trade-off between taxonomic breadth and species-level resolution."
+    "text": "What is Environmental DNA Metabarcoding?\n\n\n\n\n\nBarcoding + Meta\n\n\nBarcoding = species ID via a genetic marker sequence\nMeta = all together (all organisms at once)\n\n\n\n\n\n\n\nChoosing the right barcode\n\n\n\nDefines which organisms can be identified\nTrade-off: broad groups vs species-level precision\nCommon markers: 12S, 16S, 18S, COI, ITS\n\n\n\n\n\n\nEnvironmental DNA is any DNA collected from an environmental sample without first isolating target organisms (Taberlet 2012). Metabarcoding combines ‘meta’ — all together — with barcoding, which is species identification using a short genetic marker. The choice of marker determines which organisms are detected, and there is always a trade-off between taxonomic breadth and species-level resolution."
   },
   {
     "objectID": "index.html#the-edna-metabarcoding-workflow",
@@ -25,14 +39,14 @@
     "href": "index.html#key-metadata-edna-metabarcoding",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key Metadata: eDNA Metabarcoding",
-    "text": "Key Metadata: eDNA Metabarcoding\nFrom field collection to taxonomy — what to capture at each step\n\n\n\nField Sampling\n\nDate, Coordinates, Environmental measurements\n\n\n\nBiomarker / PCR\n\nPrimer sequence, primer reference, target gene, PCR conditions, length of product, concentration,\n\n\n\n\nDNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\n\n\nSequences & Taxonomy\n\nSequencing platform, Library layout, Public repositry ID (NCBI, ENA)\nTaxonomy, annotation confidence and reference, Pipeline, Reference library\n\n\n\n\nAt field sampling: map to eventID, decimalLatitude/Longitude, samplingProtocol, Env_broad_scale. At DNA extraction: Concentration and ratioOfAbsorbance fields. At PCR stage: target_gene, pcr_primer_forward/reverse, pcr_cond. At sequences/taxonomy: seq_meth, DNA_sequence, scientificName, taxonID, otu_db."
+    "text": "Key Metadata: eDNA Metabarcoding\nFrom field collection to taxonomy — what to capture at each step\n\n\n\n⛵ Field Sampling\n\nDate, Coordinates, Environmental measurements\n\n\n\n🧪 Biomarker / PCR\n\nPrimer sequence, primer reference, target gene, PCR conditions, length of product, concentration,\n\n\n\n\n🧬 DNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\n\n\n💻 Sequences & Taxonomy\n\nSequencing platform, Library layout, Public repositry ID (NCBI, ENA)\nTaxonomy, annotation confidence and reference, Pipeline, Reference library\n\n\n\n\nAt field sampling: map to eventID, decimalLatitude/Longitude, samplingProtocol, Env_broad_scale. At DNA extraction: Concentration and ratioOfAbsorbance fields. At PCR stage: target_gene, pcr_primer_forward/reverse, pcr_cond. At sequences/taxonomy: seq_meth, DNA_sequence, scientificName, taxonID, otu_db."
   },
   {
     "objectID": "index.html#key-metadata-quantitative-pcr-qpcr",
     "href": "index.html#key-metadata-quantitative-pcr-qpcr",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key Metadata: Quantitative PCR (qPCR)",
-    "text": "Key Metadata: Quantitative PCR (qPCR)\nTargeted species detection — additional fields vs metabarcoding · Category 3\n\n\n\nField Sampling\n\nDate, Coordinates, Environmental measurements\n\n\n\nPCR Protocol - PCR conditions\n\n\n\nDNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\n\n\nTarget & Quantity - Target gene region, primers - Copy number, concentaration, LOD, Cq, baseline\n\n\n\nCategory 3 — Targeted species detection · basisOfRecord = MaterialSample\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
+    "text": "Key Metadata: Quantitative PCR (qPCR)\nTargeted species detection — additional fields vs metabarcoding · Category 3\n\n\n\n⛵ Field Sampling\n\nDate, Coordinates, Environmental measurements\n\n\n\n🧪 PCR Protocol\n\nPCR conditions\n\n\n\n\n🧬 DNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\n\n\n🎯 Target & Quantity\n\nTarget gene region, primers\nCopy number, concentaration, LOD, Cq, baseline\n\n\n\n\nCategory 3 — Targeted species detection · basisOfRecord = MaterialSample\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
   },
   {
     "objectID": "index.html#why-publish-edna-data",
@@ -60,14 +74,14 @@
     "href": "index.html#edna-data-standards",
     "title": "Publishing eDNA Data in OBIS",
     "section": "eDNA data standards",
-    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\nMiXS - (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\nDarwin Core (DwC)\nCommunity vocabulary for biodiversity data — species, location, date, basis of record\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\nDeveloping landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\n\n\n\nMiXS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
-    "objectID": "index.html#the-data-standard",
-    "href": "index.html#the-data-standard",
+    "objectID": "index.html#darwin-core-dna-derived-data-extension",
+    "href": "index.html#darwin-core-dna-derived-data-extension",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "The data standard",
-    "text": "The data standard\nDarwin Core + DNA Derived Data Extension\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
+    "section": "Darwin Core + DNA Derived Data Extension",
+    "text": "Darwin Core + DNA Derived Data Extension\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
   },
   {
     "objectID": "index.html#the-dna-publishing-guide",
@@ -75,13 +89,6 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "The DNA publishing guide",
     "text": "The DNA publishing guide\nPublishing DNA-derived data through biodiversity data platforms"
-  },
-  {
-    "objectID": "index.html#five-data-categories",
-    "href": "index.html#five-data-categories",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "Five data categories",
-    "text": "Five data categories\nWhich one fits your data?\n\n\n\n\n\n\n\n\n#\nCategory\nExample\n\n\n\n\n1\nDNA-derived occurrences\nMetabarcoding (ASVs/OTUs assigned to taxa)\n\n\n2\nEnriched occurrences\nVoucher specimen + barcoded\n\n\n3\nTargeted species detection\nqPCR / ddPCR assays\n\n\n4\nName references\nSequence in GenBank only\n\n\n5\nMetadata only\nDataset without sequences\n\n\n\n🔎 Use the GBIF decision tree to confirm your category\n\nCategories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced."
   },
   {
     "objectID": "index.html#from-raw-outputs-long-format",
@@ -109,14 +116,14 @@
     "href": "index.html#worms-taxon-matching",
     "title": "Publishing eDNA Data in OBIS",
     "section": "WoRMS Taxon Matching",
-    "text": "WoRMS Taxon Matching\n\n\nOptions for taxon matching:\n\nWoRMS Taxon Match Tool\nProgrammatically:\n\nobistools::match_taxa\nworrms::wm_records_taxamatch\npyworms\n\n\n\n\n\n\n\n\nNo WoRMS match?\n\n\nUse the highest-rank taxon that does have a match (e.g. family or order). Keep the sequence — it can be re-identified later as reference databases improve.\n\n\n\n\n\n\n\n\nStill no match?\n\n\nUknown sequences should be recorded as: scientificName = “Biota incertae sedis” scientificNameID = urn:lsid:marinespecies.org:taxname:12"
+    "text": "WoRMS Taxon Matching\n\n\nOptions for taxon matching:\n\nWoRMS Taxon Match Tool\nProgrammatically:\n\nobistools::match_taxa\nworrms::wm_records_taxamatch\npyworms\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo WoRMS match?\n\n\nUse highest-rank taxon with a match (e.g. family or order). Keep the sequence — it can be re-identified later as reference databases improve.\n\n\n\n\n\n\n\nStill no match?\n\n\nUnknown sequences recorded as: scientificName = “Biota incertae sedis” scientificNameID = urn:lsid:marinespecies.org:taxname:12"
   },
   {
     "objectID": "index.html#key-fields-to-include-dna-extension",
     "href": "index.html#key-fields-to-include-dna-extension",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key fields to include: DNA Extension",
-    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n\n\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
+    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n\n https://manual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
   },
   {
     "objectID": "index.html#table-structure-options",
@@ -130,35 +137,28 @@
     "href": "index.html#dataset-structure-three-linked-tables",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Dataset Structure: Three Linked Tables",
-    "text": "Dataset Structure: Three Linked Tables\n\n\n\nEvent Core\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\nenv_medium\nsamplingProtocol\n\n→ the where, when & how of collection\n\n\n\nOccurrence Extension\n\noccurrenceID\neventID\nscientificName\ntaxonID (WoRMS)\nbasisOfRecord\noccurrenceStatus\n\n→ what organism was detected\n\n\n\nDNA Derived Data Ext.\n\noccurrenceID\nDNA_sequence\ntarget_gene\npcr_primer_forward\npcr_primer_reverse\nseq_meth\n\n→ the molecular context\n\n\n\nTables linked by eventID and occurrenceID\n\n\nYour published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence."
+    "text": "Dataset Structure: Three Linked Tables\n\n\n\nEvent Core\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\nenv_medium\nsamplingProtocol\n\n→ the where, when & how of collection\n\n\n\nOccurrence Extension\n\noccurrenceID\neventID\nscientificName\ntaxonID (WoRMS)\nbasisOfRecord\noccurrenceStatus\n\n→ what organism was detected\n\n\n\nDNA Derived Data Ext.\n\noccurrenceID\nDNA_sequence\ntarget_gene\npcr_primer_forward\npcr_primer_reverse\nseq_meth\n\n→ the molecular context\n\n\n\n\nTables linked by eventID and occurrenceID\n\n\nOptional 4th table: eMoF for measurements and facts\n\n\nYour published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence."
   },
   {
     "objectID": "index.html#example-usage-of-event-core-structure",
     "href": "index.html#example-usage-of-event-core-structure",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "Example usage of event core structure",
-    "text": "Example usage of event core structure\n\n\n\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row."
+    "section": "Example usage of Event core structure",
+    "text": "Example usage of Event core structure\n\n\n\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row."
   },
   {
     "objectID": "index.html#emof-extension",
     "href": "index.html#emof-extension",
     "title": "Publishing eDNA Data in OBIS",
     "section": "eMoF extension",
-    "text": "eMoF extension\n\nTable to record all types of measurements (abiotic, biotic, environmental, sampling…)\nMeasurements recorded in long format\n\nmeasurementType, measurementValue, measurementUnit\n\nLinking sampling info to eventIDs decreases duplication\nUse controlled vocabulary whenever possible!\n\n\n\n\n\n\n\n\n\n\n\n\neventID\noccurrenceID\nmeasurementType\nmeasurementValue\nmeasurementUnit\nmeasurementTypeID\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\neMoF template\n\nAs some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit"
+    "text": "eMoF extension\n\nTable to record all types of measurements (abiotic, biotic, environmental, sampling…)\nMeasurements recorded in long format\n\nmeasurementType, measurementValue, measurementUnit\n\nLinking sampling info to eventIDs decreases duplication\nUse controlled vocabulary whenever possible!\n\n\n\n\n\n\n\n\n\n\n\n\neventID\noccurrenceID\nmeasurementType\nmeasurementValue\nmeasurementUnit\n\n\n\n\n\nYEARsite1samp1\n\ntemperature\n25\nC\n\n\n\n\n\n\n\n\n\n\n\n\nmeasurementTypeID\nmeasurementUnitID\n\n\n\n\n\nhttp://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\nhttp://vocab.nerc.ac.uk/collection/P06/current/UPAA/\n\n\n\n\n\nAs some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit"
   },
   {
     "objectID": "index.html#controlled-vocabulary",
     "href": "index.html#controlled-vocabulary",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Controlled Vocabulary",
-    "text": "Controlled Vocabulary\n\n\nIdentifiers for each eMoF column\n\nmeasurementUnitID\nmeasurementValueID\n\nnon-numeric values\n\nmeasurementTypeID\n\n→ Facilitates data understanding\n→ Enables data aggregation\n→ Decreases misuse potential\n\nWhat info should vocabulary terms capture? \n\nOBIS recommends using NERC vocabulary terms\n\n\n\nEmof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!\nWhen selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g. length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary"
-  },
-  {
-    "objectID": "index.html#publishing-workflow",
-    "href": "index.html#publishing-workflow",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "Publishing workflow",
-    "text": "Publishing workflow\nIntegrated Publishing Toolkits (IPT) are hosted by OBIS nodes — you do not need to run your own server. OBIS has nodes covering most world regions. Find yours at obis.org/nodes.\n\n\n\n\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers."
+    "text": "Controlled Vocabulary\n\n\nIdentifiers for each eMoF column\n\nmeasurementUnitID\nmeasurementValueID\n\nnon-numeric values\n\nmeasurementTypeID\n\n→ Facilitates data understanding\n→ Enables data aggregation\n→ Decreases misuse potential\n\nWhat should vocabulary terms capture? \n\nOBIS recommends using NERC vocabulary terms\n\n\n\nEmof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!\nWhen selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g. length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary"
   },
   {
     "objectID": "index.html#tools-to-help-you",
@@ -175,11 +175,11 @@
     "text": "The Metabarcoding Data Toolkit (MDT)\nA newer tool to simplify the workflow\n\nDeveloped by GBIF specifically for metabarcoding data\n\nAccepts common pipeline outputs (QIIME2, DADA2, etc.)\n\nHandles the wide-to-long transformation\n\nGenerates Darwin Core Archive + DNA Extension automatically\n\nIntegrates with IPT publishing\n\n🔗 Available at: mdt.gbif.org\n\n\n\n\n\n\nNote\n\n\nStill under active development — check the GBIF documentation for the latest capabilities. Currently not possible to use the event core structure\n\n\n\n\nThe MDT is a significant time-saver for complex datasets. It can be used alongside the IPT rather than replacing it — it handles the data formatting step and then hands off to the IPT for publishing."
   },
   {
-    "objectID": "index.html#quality-control",
-    "href": "index.html#quality-control",
+    "objectID": "index.html#obis-dna-data-management-platform",
+    "href": "index.html#obis-dna-data-management-platform",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "Quality control",
-    "text": "Quality control\nBefore publishing — check for:\n\n✅ Taxonomy matched to WoRMS (AphiaID required for marine taxa)\n\n✅ Coordinates in decimal degrees, in the ocean\n\n✅ Dates in ISO 8601 format (YYYY-MM-DD)\n\n✅ Unique, stable occurrenceID and eventID\n\n✅ Table linkages consistent (eventID, occurrenceID)\n\nTools:\n\n\n\nTool\nWhat it checks\n\n\n\n\nobistools (R package)\nTaxonomy, geography, required fields\n\n\nGBIF data validator\nDarwin Core Archive structure\n\n\nWoRMS taxon match\nScientific names → AphiaIDs\n\n\n\n\nobistools is an R package from OBIS. The GBIF validator is a web-based tool. WoRMS has a batch taxon match tool at marinespecies.org/aphia.php. For unidentified sequences, assign a high-level taxon if possible (e.g., kingdom Animalia) rather than leaving the field empty."
+    "section": "OBIS DNA Data Management Platform",
+    "text": "OBIS DNA Data Management Platform\n🔧 OBIS is developing a data management platform for DNA data including:\n\n\n\nBioinformatics\nQC\nValidation\nPublication to OBIS pipeline\n\nTo be offered to OBIS nodes to support local eDNA projects!\n\n🚧"
   },
   {
     "objectID": "index.html#edna-is-already-in-obis-and-being-used",
@@ -193,7 +193,7 @@
     "href": "index.html#resources-and-community",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Resources and community",
-    "text": "Resources and community\n\n\n\nResource\nLink\n\n\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22\n\n\nOBON 2024 DNA training\ngithub.com/iobis/obon-2024-dna-training\n\n\nIOOS Bio Mobilization Workshop\nioos.github.io/bio_mobilization_workshop\n\n\nGBIF-NA DNA Publishing Workshop\nsunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing\n\n\nOBIS helpdesk\nhelpdesk@obis.org\n\n\n\n\nThe community is genuinely welcoming to beginners. The OBIS helpdesk responds quickly. The workshops listed here offer hands-on help with your own data — participants bring actual datasets and work through formatting with instructors."
+    "text": "Resources and community\n\n\n\nResource\nLink\n\n\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nOBIS DNA training slides (this presentation!)\ngithub.com/iobis/obis_edna_slides_node_training\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22\n\n\nOBON 2024 DNA training\ngithub.com/iobis/obon-2024-dna-training\n\n\nIOOS Bio Mobilization Workshop\nioos.github.io/bio_mobilization_workshop\n\n\nGBIF-NA DNA Publishing Workshop\nsunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing\n\n\nOBIS helpdesk\nhelpdesk@obis.org\n\n\n\n\nThe community is genuinely welcoming to beginners. The OBIS helpdesk responds quickly. The workshops listed here offer hands-on help with your own data — participants bring actual datasets and work through formatting with instructors."
   },
   {
     "objectID": "index.html#summary",
@@ -201,12 +201,5 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "Summary",
     "text": "Summary\n\n\nThree steps to publish your eDNA data:\n\nFormat — Darwin Core + DNA Derived Data Extension\nLong format: one row = one sequence per sample\nDocument — Complete EML metadata\nPrimers, methods, bioinformatics pipeline, license\nPublish — Through your OBIS node IPT\nGet a DOI. Be cited. Join the global record.\n\n\nStart here → manual.obis.org/dna_data.html\n\nWhy it matters\n\neDNA captures biodiversity no other method can.\nPublishing it in OBIS makes it\nreusable, citable, and permanent.\n\n\n\nClose with energy. Remind the audience that the gap between eDNA data currently in OBIS and what could be there is enormous — their data can meaningfully fill it. If time allows, invite them to share what kind of eDNA data they have and talk about the right category/structure for their case."
-  },
-  {
-    "objectID": "index.html#dna-data-management-platform",
-    "href": "index.html#dna-data-management-platform",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "DNA Data Management Platform",
-    "text": "DNA Data Management Platform\n🔧 OBIS is developing a data management platform for DNA data including:\n\n\n\nBioinformatics\nQC\nValidation\nPublication to OBIS pipeline\n\nTo be offered to OBIS nodes to support local eDNA projects!\n\n🚧"
   }
 ]
