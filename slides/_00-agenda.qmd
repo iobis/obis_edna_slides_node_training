@@ -4,7 +4,6 @@
 |---|---|
 | 00:00 | Welcome and housekeeping |
 | 00:10 | Introduction to DNA-derived data |
-| 00:30 | Dataset exercise introduction |
 | 00:40 | Dataset exercise introduction |
 | 00:45 | Exercise: samples.xlsx (Event & eMoF table) |
 | 00:55 | Exercise: seqtab.txt (Occurrence) |
