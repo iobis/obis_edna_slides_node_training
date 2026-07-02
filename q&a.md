@@ -26,3 +26,7 @@ You can also record the primer information only once. If your study uses multipl
 ### What should be the value for occurrenceStatus for the 0’s in OTU/ASV table? (As this does not mean absent)
 
 > **Answer**: We recommend that you leave them out of the occurrence file, and only record presences.
+
+###  If we have an event table we will end up having a total of 4 tables? And Wasn't there some direction not to use event core for now due to the large size of the archive you end up with?
+
+> **Answer**: Yes, you end up with 4 tables. Event core used to not be possible for DNA-derived data, only occurrence core. But it was added to overcome this problem of large data archives. Instead of having to repeat event-level data for each occurrence, it is now in the event table. The technical backend needed to handle DNA data with the event core has only been operational for a few months. 
