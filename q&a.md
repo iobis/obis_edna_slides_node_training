@@ -45,6 +45,6 @@ You can also record the primer information only once. If your study uses multipl
 ### Where do we put the different protocols?
 
 > **Answer**:
-> - The **sop** term is defined as “Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences” (https://w3id.org/mixs/0000090). Here, we would thus put the link to the bioinformatic pipeline
+> - The **sop** term is defined as “Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences” (https://w3id.org/mixs/0000090). In the dna extension table, this is where we put the link to the bioinformatic pipeline.
 > - The water sampling protocol should go in the term **sampProtocol** (http://rs.tdwg.org/dwc/terms/samplingProtocol) in the event table
 
