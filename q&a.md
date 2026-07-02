@@ -27,6 +27,24 @@ You can also record the primer information only once. If your study uses multipl
 
 > **Answer**: We recommend that you leave them out of the occurrence file, and only record presences.
 
-###  If we have an event table we will end up having a total of 4 tables? And Wasn't there some direction not to use event core for now due to the large size of the archive you end up with?
+###  If we have an event table we will end up having a total of 4 tables? Wasn't there some direction not to use event core for now due to the large size of the archive you end up with?
 
-> **Answer**: Yes, you end up with 4 tables. Event core used to not be possible for DNA-derived data, only occurrence core. But it was added to overcome this problem of large data archives. Instead of having to repeat event-level data for each occurrence, it is now in the event table. The technical backend needed to handle DNA data with the event core has only been operational for a few months. 
+> **Answer**: Yes, you end up with 4 tables > Event, Occurrence, eDNA extension and eMoF. Event core used to not be possible for DNA-derived data, only occurrence core. But it was added to overcome this problem of large data archives. Instead of having to repeat event-level data for each occurrence, it is now in the event table. The technical backend needed to handle DNA data with the event core has only been operational for a few months.
+
+### The use of sampleSizeValue in occurrence or event, and samp_size in the dna extension is confusing. Where should we put the volume of water filtered?
+
+> **Answer**:
+> - The volume of water filtered, or the volume of sediment sampled, should go in the dna extension table under samp_size (https://w3id.org/mixs/0000001).
+> - In the occurrence table, the sampleSizeValue is used to record the total number of sequence reads in our sample (http://rs.tdwg.org/dwc/terms/sampleSizeValue). This should be the sum of all the sequence reads in each sample. The number of sequence reads per taxon per sample is recorded in organismQuantity. This is added for each occurrence to allow the calculation of proportions of read abundances for each occurrence.
+> - Do not put the sampled volume in the event table, as this will be overwritten by the occurrence table when uploading as currently the same fields from different tables are indexed hierarchically (see question above)
+
+### What's the difference between samp_size and samp_vol_we_dna_ext?
+
+> **Answer**: If the total sample volume is used for dna extraction, then **samp_size** = **samp_vol_we_dna_ext**. But if only a subset of the filtered volume is extracted, then that is specified in **samp_vol_we_dna_ext**
+
+### Where do we put the different protocols?
+
+> **Answer**:
+> - The **sop** term is defined as “Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences” (https://w3id.org/mixs/0000090). Here, we would thus put the link to the bioinformatic pipeline
+> - The water sampling protocol should go in the term **sampProtocol** (http://rs.tdwg.org/dwc/terms/samplingProtocol) in the event table
+
